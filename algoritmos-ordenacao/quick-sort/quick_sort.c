@@ -70,20 +70,5 @@ int main(){
 
     printf("\nTempo de execução do Quick Sort: %f segundos\n", time_taken);
 
-// -------------------------------------------------------------------------------------------------
-    
-    clock_t start_time2 = clock();
-
-    quick_sort(vetor, 0, SIZE -1);
-
-    clock_t end_time2 = clock();
-
-    double time_taken2 = (double) (end_time2 - start_time2) / CLOCKS_PER_SEC;
-
-    for (int i = 0; i < SIZE; i++)
-        printf("%d ", vetor[i]);
-
-    printf("\nTempo de execução do Quick Sort no \"pior caso\": %f segundos\n", time_taken2);
-
     return 0;
 }
